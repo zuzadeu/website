@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyTorch on Zuzanna Deutschman</title>
+    <link>https://zuzadeu.github.io/tags/pytorch/</link>
+    <description>Recent content in PyTorch on Zuzanna Deutschman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predict The Office character with TwoModalBERT</title>
+      <link>https://zuzadeu.github.io/blogs/twomodalbert/</link>
+      <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blogs/twomodalbert/</guid>
+      <description>Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
+Let&amp;rsquo;s consider whether we want to classify the below sample as positive or negative.
+context message This product is horrible, which I didn&amp;rsquo;t expect. Its website is just incredible! When only the message is considered, you can see its sentiment is positive due to the word &amp;lsquo;incredible&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
