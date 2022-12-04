@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recommender Systems on Zuzanna Deutschman</title>
-    <link>https://zuzadeu.github.io/tags/recommender-systems/</link>
+    <link>https://zuzadeu.github.io/website/tags/recommender-systems/</link>
     <description>Recent content in Recommender Systems on Zuzanna Deutschman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/recommender-systems/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/website/tags/recommender-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recommender Systems: Machine Learning Metrics and Business Metrics</title>
-      <link>https://zuzadeu.github.io/blog/recommendersystems/</link>
+      <link>https://zuzadeu.github.io/website/blog/recommendersystems/</link>
       <pubDate>Mon, 14 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/blog/recommendersystems/</guid>
+      <guid>https://zuzadeu.github.io/website/blog/recommendersystems/</guid>
       <description>This article was written for neptune.ai. It is about what metrics to select for recommender systems evaluation, so the Business strategies and Machine Learning models can work in harmony.</description>
     </item>
     
