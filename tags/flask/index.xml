@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flask on Zuzanna Deutschman</title>
+    <link>https://zuzadeu.github.io/tags/flask/</link>
+    <description>Recent content in Flask on Zuzanna Deutschman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jun 2020 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sentiment Analyzer with BERT (build, tune, deploy)</title>
+      <link>https://zuzadeu.github.io/blog/sentiment/</link>
+      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/sentiment/</guid>
+      <description>This article was published in Towards Data Science. It is a blog post presenting how to develop a sentiment analyzer. It covers text preprocessing, model building, tuning, API, frontend creation, and containerization.</description>
+    </item>
+    
+  </channel>
+</rss>

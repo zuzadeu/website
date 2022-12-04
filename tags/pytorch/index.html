@@ -31,7 +31,7 @@
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-DWJJVE27WD', 'auto');
+	ga('create', 'G-BY7FGEPYQ6', 'auto');
 	
 	ga('send', 'pageview');
 }
@@ -80,6 +80,13 @@ if (!doNotTrack) {
         font-weight: 400;
         line-height: 1.5;
         text-align: left;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: stretch;
+        display: flex;
+    }
+    #content {
+        flex-grow: 1;
     }
 </style>
 
@@ -218,11 +225,19 @@ PyTorch | Zuzanna Deutschman
     <div class="row">
         
         <div class="col-lg-4 col-md-6 my-3">
+          <a href="
+                      /blog/twomodalbert/
+                    "
+             class="text-decoration-none">
             <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img-top" src="/images/blog/twomodalbert/theoffice.jpg" alt="Predict The Office character with TwoModalBERT">
+                </div>
+    
                 <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/blogs/twomodalbert/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Predict The Office character with TwoModalBERT">Predict The Office …</h5>
-                    </a>
+                    
+                        <h5 class="primary-font card-title bg-transparent" title="Predict The Office character with TwoModalBERT">Predict The Office character with TwoModalBERT</h5>
+                    
                     <div class="card-text secondary-font">
                         <p>Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
 Let&rsquo;s consider whether we want to classify the below sample as positive or …</p>
@@ -230,9 +245,10 @@ Let&rsquo;s consider whether we want to classify the below sample as positive or
                 </div>
                 <div class="mt-auto post-footer bg-transparent py-3">
                     <span class="float-start bg-transparent">November 3, 2022</span>
-                    <a href="/blogs/twomodalbert/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    
                 </div>
             </div>
+            </a>
         </div>
         
         <div class="row justify-content-center">

@@ -6,22 +6,40 @@
     <description>Recent content in Tags on Zuzanna Deutschman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning</title>
+      <link>https://zuzadeu.github.io/tags/machine-learning/</link>
+      <pubDate>Mon, 14 Nov 2022 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML metrics</title>
+      <link>https://zuzadeu.github.io/tags/ml-metrics/</link>
+      <pubDate>Mon, 14 Nov 2022 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/ml-metrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recommender Systems</title>
+      <link>https://zuzadeu.github.io/tags/recommender-systems/</link>
+      <pubDate>Mon, 14 Nov 2022 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/recommender-systems/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Deep Learning</title>
       <link>https://zuzadeu.github.io/tags/deep-learning/</link>
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
       <guid>https://zuzadeu.github.io/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://zuzadeu.github.io/tags/machine-learning/</link>
-      <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
-      
-      <guid>https://zuzadeu.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -40,6 +58,51 @@
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
       <guid>https://zuzadeu.github.io/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://zuzadeu.github.io/tags/docker/</link>
+      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flask</title>
+      <link>https://zuzadeu.github.io/tags/flask/</link>
+      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sacred</title>
+      <link>https://zuzadeu.github.io/tags/sacred/</link>
+      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/sacred/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>https://zuzadeu.github.io/tags/data-science/</link>
+      <pubDate>Fri, 22 May 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>https://zuzadeu.github.io/tags/tensorflow/</link>
+      <pubDate>Wed, 15 Apr 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     
