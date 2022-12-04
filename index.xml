@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zuzanna Deutschman</title>
-    <link>https://zuzadeu.github.io/website/</link>
+    <link>https://zuzadeu.github.io/</link>
     <description>Recent content on Zuzanna Deutschman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recommender Systems: Machine Learning Metrics and Business Metrics</title>
-      <link>https://zuzadeu.github.io/website/blog/recommendersystems/</link>
+      <link>https://zuzadeu.github.io/blog/recommendersystems/</link>
       <pubDate>Mon, 14 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/recommendersystems/</guid>
+      <guid>https://zuzadeu.github.io/blog/recommendersystems/</guid>
       <description>This article was written for neptune.ai. It is about what metrics to select for recommender systems evaluation, so the Business strategies and Machine Learning models can work in harmony.</description>
     </item>
     
     <item>
       <title>Predict The Office character with TwoModalBERT</title>
-      <link>https://zuzadeu.github.io/website/blog/twomodalbert/</link>
+      <link>https://zuzadeu.github.io/blog/twomodalbert/</link>
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/twomodalbert/</guid>
+      <guid>https://zuzadeu.github.io/blog/twomodalbert/</guid>
       <description>Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
 Let&amp;rsquo;s consider whether we want to classify the below sample as positive or negative.
 context message This product is horrible, which I didn&amp;rsquo;t expect. Its website is just incredible! When only the message is considered, you can see its sentiment is positive due to the word &amp;lsquo;incredible&amp;rsquo;.</description>
@@ -29,47 +29,47 @@ context message This product is horrible, which I didn&amp;rsquo;t expect. Its w
     
     <item>
       <title>Contact</title>
-      <link>https://zuzadeu.github.io/website/gallery/</link>
+      <link>https://zuzadeu.github.io/gallery/</link>
       <pubDate>Sat, 25 Jun 2022 18:35:46 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/gallery/</guid>
+      <guid>https://zuzadeu.github.io/gallery/</guid>
       <description>My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! email: zuza.deu@gmail.com btnName: Mail me
 mail me</description>
     </item>
     
     <item>
       <title>Sentiment Analyzer with BERT (build, tune, deploy)</title>
-      <link>https://zuzadeu.github.io/website/blog/sentiment/</link>
+      <link>https://zuzadeu.github.io/blog/sentiment/</link>
       <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/sentiment/</guid>
+      <guid>https://zuzadeu.github.io/blog/sentiment/</guid>
       <description>This article was published in Towards Data Science. It is a blog post presenting how to develop a sentiment analyzer. It covers text preprocessing, model building, tuning, API, frontend creation, and containerization.</description>
     </item>
     
     <item>
       <title>Generate Nick Cave’s Lyrics in 2 mins</title>
-      <link>https://zuzadeu.github.io/website/blog/nickcave/</link>
+      <link>https://zuzadeu.github.io/blog/nickcave/</link>
       <pubDate>Fri, 22 May 2020 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/nickcave/</guid>
+      <guid>https://zuzadeu.github.io/blog/nickcave/</guid>
       <description>This article was published in Towards Data Science. It is a blog post presenting a simple song lyrics generator using GPT-2 language model.</description>
     </item>
     
     <item>
       <title>Replicate your friend with Transformer</title>
-      <link>https://zuzadeu.github.io/website/blog/messenger/</link>
+      <link>https://zuzadeu.github.io/blog/messenger/</link>
       <pubDate>Wed, 15 Apr 2020 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/messenger/</guid>
+      <guid>https://zuzadeu.github.io/blog/messenger/</guid>
       <description>This article was written for Chatbot&amp;rsquo;s Life. It is a tutorial in which a chatbot based on a conversation from Messenger is created from scratch using TensorFlow.</description>
     </item>
     
     <item>
       <title>Multi-Label Text Classification</title>
-      <link>https://zuzadeu.github.io/website/blog/multilabel/</link>
+      <link>https://zuzadeu.github.io/blog/multilabel/</link>
       <pubDate>Tue, 03 Dec 2019 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/multilabel/</guid>
+      <guid>https://zuzadeu.github.io/blog/multilabel/</guid>
       <description>This article was published in Towards Data Science. It is a blog post presenting various methods of multi-label multiclass classification techniques.</description>
     </item>
     

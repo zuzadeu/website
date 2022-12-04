@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Natural Language Processing on Zuzanna Deutschman</title>
-    <link>https://zuzadeu.github.io/website/tags/natural-language-processing/</link>
+    <link>https://zuzadeu.github.io/tags/natural-language-processing/</link>
     <description>Recent content in Natural Language Processing on Zuzanna Deutschman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/website/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Predict The Office character with TwoModalBERT</title>
-      <link>https://zuzadeu.github.io/website/blog/twomodalbert/</link>
+      <link>https://zuzadeu.github.io/blog/twomodalbert/</link>
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/twomodalbert/</guid>
+      <guid>https://zuzadeu.github.io/blog/twomodalbert/</guid>
       <description>Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
 Let&amp;rsquo;s consider whether we want to classify the below sample as positive or negative.
 context message This product is horrible, which I didn&amp;rsquo;t expect. Its website is just incredible! When only the message is considered, you can see its sentiment is positive due to the word &amp;lsquo;incredible&amp;rsquo;.</description>
@@ -20,19 +20,19 @@ context message This product is horrible, which I didn&amp;rsquo;t expect. Its w
     
     <item>
       <title>Sentiment Analyzer with BERT (build, tune, deploy)</title>
-      <link>https://zuzadeu.github.io/website/blog/sentiment/</link>
+      <link>https://zuzadeu.github.io/blog/sentiment/</link>
       <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/sentiment/</guid>
+      <guid>https://zuzadeu.github.io/blog/sentiment/</guid>
       <description>This article was published in Towards Data Science. It is a blog post presenting how to develop a sentiment analyzer. It covers text preprocessing, model building, tuning, API, frontend creation, and containerization.</description>
     </item>
     
     <item>
       <title>Replicate your friend with Transformer</title>
-      <link>https://zuzadeu.github.io/website/blog/messenger/</link>
+      <link>https://zuzadeu.github.io/blog/messenger/</link>
       <pubDate>Wed, 15 Apr 2020 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/messenger/</guid>
+      <guid>https://zuzadeu.github.io/blog/messenger/</guid>
       <description>This article was written for Chatbot&amp;rsquo;s Life. It is a tutorial in which a chatbot based on a conversation from Messenger is created from scratch using TensorFlow.</description>
     </item>
     

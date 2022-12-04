@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tensorflow on Zuzanna Deutschman</title>
-    <link>https://zuzadeu.github.io/website/tags/tensorflow/</link>
+    <link>https://zuzadeu.github.io/tags/tensorflow/</link>
     <description>Recent content in Tensorflow on Zuzanna Deutschman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2020 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/website/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Apr 2020 19:53:33 +0530</lastBuildDate><atom:link href="https://zuzadeu.github.io/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Replicate your friend with Transformer</title>
-      <link>https://zuzadeu.github.io/website/blog/messenger/</link>
+      <link>https://zuzadeu.github.io/blog/messenger/</link>
       <pubDate>Wed, 15 Apr 2020 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/website/blog/messenger/</guid>
+      <guid>https://zuzadeu.github.io/blog/messenger/</guid>
       <description>This article was written for Chatbot&amp;rsquo;s Life. It is a tutorial in which a chatbot based on a conversation from Messenger is created from scratch using TensorFlow.</description>
     </item>
     
