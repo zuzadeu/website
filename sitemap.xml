@@ -1,70 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://zuzadeu.github.io/tags/machine-learning/</loc>
-    <lastmod>2022-11-14T19:53:33+05:30</lastmod>
-  </url><url>
+    <lastmod>2023-04-19T19:53:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/ml-metrics/</loc>
-    <lastmod>2022-11-14T19:53:33+05:30</lastmod>
-  </url><url>
+    <lastmod>2023-04-19T19:53:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/recommender-systems/</loc>
-    <lastmod>2022-11-14T19:53:33+05:30</lastmod>
-  </url><url>
+    <lastmod>2023-04-19T19:53:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/recommendersystems/</loc>
-    <lastmod>2022-11-14T19:53:33+05:30</lastmod>
-  </url><url>
+    <lastmod>2023-04-19T19:53:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/</loc>
-    <lastmod>2022-11-14T19:53:33+05:30</lastmod>
-  </url><url>
+    <lastmod>2023-04-19T19:53:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/</loc>
-    <lastmod>2022-11-14T19:53:33+05:30</lastmod>
-  </url><url>
+    <lastmod>2023-04-19T19:53:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/deep-learning/</loc>
     <lastmod>2022-11-03T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/natural-language-processing/</loc>
     <lastmod>2022-11-03T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/twomodalbert/</loc>
     <lastmod>2022-11-03T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/pytorch/</loc>
     <lastmod>2022-11-03T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/gallery/</loc>
     <lastmod>2022-06-25T18:35:46+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/</loc>
     <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/docker/</loc>
     <lastmod>2020-06-24T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/flask/</loc>
     <lastmod>2020-06-24T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/sacred/</loc>
     <lastmod>2020-06-24T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/sentiment/</loc>
     <lastmod>2020-06-24T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/data-science/</loc>
     <lastmod>2020-05-22T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/nickcave/</loc>
     <lastmod>2020-05-22T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/messenger/</loc>
     <lastmod>2020-04-15T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/tags/tensorflow/</loc>
     <lastmod>2020-04-15T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/blog/multilabel/</loc>
     <lastmod>2019-12-03T19:53:33+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://zuzadeu.github.io/categories/</loc>
   </url>
+  
 </urlset>

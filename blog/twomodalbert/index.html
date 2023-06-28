@@ -41,18 +41,17 @@ if (!doNotTrack) {
 <meta property="og:title" content="Predict The Office character with TwoModalBERT" />
 <meta property="og:description" content="Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
 Let&rsquo;s consider whether we want to classify the below sample as positive or negative.
-context message This product is horrible, which I didn&rsquo;t expect. Its website is just incredible! When only the message is considered, you can see its sentiment is positive due to the word &lsquo;incredible&rsquo;." />
+   context message     This product is horrible, which I didn&rsquo;t expect. Its website is just incredible!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zuzadeu.github.io/blog/twomodalbert/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://zuzadeu.github.io/blog/twomodalbert/" />
 <meta property="article:published_time" content="2022-11-03T19:53:33+05:30" />
 <meta property="article:modified_time" content="2022-11-03T19:53:33+05:30" /><meta property="og:site_name" content="Zuzanna Deutschman" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Predict The Office character with TwoModalBERT"/>
 <meta name="twitter:description" content="Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
 Let&rsquo;s consider whether we want to classify the below sample as positive or negative.
-context message This product is horrible, which I didn&rsquo;t expect. Its website is just incredible! When only the message is considered, you can see its sentiment is positive due to the word &lsquo;incredible&rsquo;."/>
+   context message     This product is horrible, which I didn&rsquo;t expect. Its website is just incredible!"/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -248,9 +247,14 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
           </div>
           
           <article class="page-content  p-2">
-          <h2 id="introduction">Introduction</h2>
+          
+
+<h2 id="introduction">Introduction</h2>
+
 <p>Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.</p>
+
 <p>Let&rsquo;s consider whether we want to classify the below sample as positive or negative.</p>
+
 <table>
 <thead>
 <tr>
@@ -258,6 +262,7 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
 <th>message</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>This product is horrible, which I didn&rsquo;t expect.</td>
@@ -265,38 +270,52 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
 </tr>
 </tbody>
 </table>
+
 <p>When only the message is considered, you can see its sentiment is positive due to the word &lsquo;incredible&rsquo;. However, when the context is considered, sentiment will be rather negative.</p>
+
 <p>Given the above, ML Engineer needs to find an answer for below questions:</p>
+
 <ul>
-<li>
-<p>Is it worth considering context as a separate feature?</p>
-</li>
-<li>
-<p>Does concentrating both text features into one improve the model&rsquo;s performance?</p>
-</li>
-<li>
-<p>Should the weighing of context and message be introduced? If so, what are the proper weights?</p>
-</li>
+<li><p>Is it worth considering context as a separate feature?</p></li>
+
+<li><p>Does concentrating both text features into one improve the model&rsquo;s performance?</p></li>
+
+<li><p>Should the weighing of context and message be introduced? If so, what are the proper weights?</p></li>
 </ul>
-<p>As a very first check, I always recommend just concatenating both text fields. If it brings an improvement to the model compared to the usage of only the latest message - we should dive into weights research. How about we create a neural network with two modes and a tunable size of dense layers on top of each mode? In that way, we could find proper weights automatically! <img src="C:%5CUsers%5Czuzan%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-11-01-12-33-39-image.png" alt=""></p>
+
+<p>As a very first check, I always recommend just concatenating both text fields. If it brings an improvement to the model compared to the usage of only the latest message - we should dive into weights research. How about we create a neural network with two modes and a tunable size of dense layers on top of each mode? In that way, we could find proper weights automatically! <img src="C:UserszuzanAppDataRoamingmarktextimages2022-11-01-12-33-39-image.png" alt="" /></p>
+
 <p>This is what the TwoModalBERT package I developed for. Let&rsquo;s see how the neural network inside it is constructed.</p>
+
 <h2 id="neural-network-architecture">Neural network architecture</h2>
+
 <p>Below you can find how TwoModalBERT is constructed and what are the class parameters.</p>
-<figure><img src="/images/blog/twomodalbert/nn.png"/>
+
+<figure>
+    <img src="/images/blog/twomodalbert/nn.png"/> 
 </figure>
 
+
 <p>First of all, on top of the last BERT layer, a linear layer is added. To be precise, it is added on top of the CLS token. As the CLS token aggregates the entire sequence representation, it is often used in a classification task. Let&rsquo;s see the relevant three lines of code for better understanding.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>        outputs <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>model(input_ids<span style="color:#f92672">=</span>input_ids, <span style="color:#960050;background-color:#1e0010">                </span>attention_mask<span style="color:#f92672">=</span>attention_mask)
-</span></span><span style="display:flex;"><span>        last_hidden_states <span style="color:#f92672">=</span> outputs[<span style="color:#e6db74">&#39;hidden_states&#39;</span>][<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] 
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># last layer size: (batch_size, seq_len, hs)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        cls_hidden_states <span style="color:#f92672">=</span> last_hidden_states[:, <span style="color:#ae81ff">0</span>, :]
-</span></span><span style="display:flex;"><span>        last_hidden_states_reduced <span style="color:#f92672">=</span> linear_layer(cls_hidden_states)
-</span></span></code></pre></div><p>The linear layer transforms input features with hidden size relevant to the BERT model, which is usually 768 for the models available in the <em>transformers</em> package, into features with hidden size equal to predefined <code>context_size</code> and <code>text_size</code>.</p>
+
+<pre><code class="language-python">        outputs = self.model(input_ids=input_ids,                 attention_mask=attention_mask)
+        last_hidden_states = outputs['hidden_states'][-1] 
+        # last layer size: (batch_size, seq_len, hs)
+
+        cls_hidden_states = last_hidden_states[:, 0, :]
+        last_hidden_states_reduced = linear_layer(cls_hidden_states)
+</code></pre>
+
+<p>The linear layer transforms input features with hidden size relevant to the BERT model, which is usually 768 for the models available in the <em>transformers</em> package, into features with hidden size equal to predefined <code>context_size</code> and <code>text_size</code>.</p>
+
 <p>In the next step, the dropout layer is added on the top. Why? Because it makes the neural network less sensitive to the specific weights of neurons and not prone to overfitting.</p>
+
 <p>Finally, both branches created similarly are combined and followed by another dropout layer. Does it work? Let&rsquo;s check out a short demo.</p>
+
 <h2 id="twomodalbert-package">TwoModalBERT package</h2>
+
 <p>The TwoModalBERT package allows us to quickly run an experiment with the two-modal neural network architecture described in the above section. It allows quickly constructing a model on top of <code>Pytorch</code> and <code>transformers</code> libraries and enables experimenting with weights of two input texts. So, how to use the package?</p>
+
 <table>
 <thead>
 <tr>
@@ -305,37 +324,44 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
 <th>Default Value</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>EPOCHS</td>
 <td>the number of complete passes through the training dataset</td>
 <td>3</td>
 </tr>
+
 <tr>
 <td>RANDOM_SEED</td>
 <td>a number used to initialize a pseudorandom number generator</td>
 <td>42</td>
 </tr>
+
 <tr>
 <td>BARCH_SIZE</td>
 <td>the number of training samples to work through before the model’s internal parameters are updated</td>
 <td>16</td>
 </tr>
+
 <tr>
 <td>MAX_SEQ_LEN</td>
 <td>the maximum length in number of tokens for the inputs to the transformer model</td>
 <td>100</td>
 </tr>
+
 <tr>
 <td>NUM_WORKERS</td>
 <td>the number of processes that generate batches in parallel</td>
 <td>2</td>
 </tr>
+
 <tr>
 <td>PRETRAINED_MODEL_NAME_OR_PATH</td>
 <td>of a pre-trained model configuration to load from cache or download (equivalent to <code>transformers</code>)</td>
 <td>bert-base-uncased</td>
 </tr>
+
 <tr>
 <td>MODEL_SAVE_PATH</td>
 <td>the model save path</td>
@@ -343,75 +369,98 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
 </tr>
 </tbody>
 </table>
+
 <p>After the initial parameters are set up, we can go through the example. We will use the <a href="https://www.kaggle.com/datasets/nasirkhalid24/the-office-us-complete-dialoguetranscript">&ldquo;The Office&rdquo; dataset</a> containing all lines of dialogue from the series. Our goal is going to be: to verify whether it is easier to recognize the character who speaks based on the previous and the current line or only the current line. After small preprocessing the dataset looks as follows:</p>
-<figure><img src="/images/blog/twomodalbert/table.png"/>
+
+<figure>
+    <img src="/images/blog/twomodalbert/table.png"/> 
 </figure>
+
 
 <p>Essential columns for further analysis are:</p>
+
 <ul>
-<li>
-<p>line  - what the speaker says</p>
-</li>
-<li>
-<p>context - what the previous speaker said</p>
-</li>
-<li>
-<p>label - a number associated with each speaker</p>
-</li>
+<li><p>line  - what the speaker says</p></li>
+
+<li><p>context - what the previous speaker said</p></li>
+
+<li><p>label - a number associated with each speaker</p>
+
+<pre><code class="language-python"># intialize modules
+DataPreparation = TwoModalDataPreparation(config=config)
+Trainer = TwoModalBertTrainer(device=DEVICE, config=config)
+</code></pre>
+
+<pre><code class="language-python"># create data loaders
+(
+train_data_loader,
+train,
+val_data_loader,
+val,
+test_data_loader,
+test,
+) = DataPreparation.prepare_data(
+df,
+text_column=&quot;line&quot;,
+context_column=&quot;context&quot;,
+label_column=&quot;label&quot;,
+train_size=0.8,
+val_size=0.1,
+)
+</code></pre></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># intialize modules</span>
-</span></span><span style="display:flex;"><span>DataPreparation <span style="color:#f92672">=</span> TwoModalDataPreparation(config<span style="color:#f92672">=</span>config)
-</span></span><span style="display:flex;"><span>Trainer <span style="color:#f92672">=</span> TwoModalBertTrainer(device<span style="color:#f92672">=</span>DEVICE, config<span style="color:#f92672">=</span>config)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># create data loaders</span>
-</span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    train_data_loader,
-</span></span><span style="display:flex;"><span>    train,
-</span></span><span style="display:flex;"><span>    val_data_loader,
-</span></span><span style="display:flex;"><span>    val,
-</span></span><span style="display:flex;"><span>    test_data_loader,
-</span></span><span style="display:flex;"><span>    test,
-</span></span><span style="display:flex;"><span>) <span style="color:#f92672">=</span> DataPreparation<span style="color:#f92672">.</span>prepare_data(
-</span></span><span style="display:flex;"><span>    df,
-</span></span><span style="display:flex;"><span>    text_column<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;line&#34;</span>,
-</span></span><span style="display:flex;"><span>    context_column<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;context&#34;</span>,
-</span></span><span style="display:flex;"><span>    label_column<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;label&#34;</span>,
-</span></span><span style="display:flex;"><span>    train_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>,
-</span></span><span style="display:flex;"><span>    val_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>,
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><p>After we created data loaders, we can train the model. Note, that all the neural network parameters used here are presented in the previous section. Let&rsquo;s set up <code>text_size = 100</code> and <code>context_size = 1</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># train the model</span>
-</span></span><span style="display:flex;"><span> model, history <span style="color:#f92672">=</span> Trainer<span style="color:#f92672">.</span>train_model(
-</span></span><span style="display:flex;"><span> train_data_loader,
-</span></span><span style="display:flex;"><span> train,
-</span></span><span style="display:flex;"><span> val_data_loader,
-</span></span><span style="display:flex;"><span> val,
-</span></span><span style="display:flex;"><span> text_size<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>,
-</span></span><span style="display:flex;"><span> context_size<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>,
-</span></span><span style="display:flex;"><span> binary<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
-</span></span><span style="display:flex;"><span> text_p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>,
-</span></span><span style="display:flex;"><span> context_p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>,
-</span></span><span style="display:flex;"><span> output_p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>,
-</span></span><span style="display:flex;"><span> )
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># evaluate the model on a test set</span>
-</span></span><span style="display:flex;"><span>y_pred, y_test <span style="color:#f92672">=</span> test_model(model, test_data_loader)
-</span></span><span style="display:flex;"><span>y_pred, y_test <span style="color:#f92672">=</span> [e<span style="color:#f92672">.</span>cpu() <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> y_pred], [e<span style="color:#f92672">.</span>cpu() <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> y_test]
-</span></span></code></pre></div><p>Since the model is trained, we may evaluate it on a test set (feel free to apply any selected metric on <code>y_pred</code> and <code>y_test</code>). We will check the confusion matrix.</p>
-<figure><img src="/images/blog/twomodalbert/confusion_matrix_1.png"/>
+
+<p>After we created data loaders, we can train the model. Note, that all the neural network parameters used here are presented in the previous section. Let&rsquo;s set up <code>text_size = 100</code> and <code>context_size = 1</code>.</p>
+
+<pre><code class="language-python"># train the model
+ model, history = Trainer.train_model(
+ train_data_loader,
+ train,
+ val_data_loader,
+ val,
+ text_size=100,
+ context_size=50,
+ binary=False,
+ text_p=0.3,
+ context_p=0.3,
+ output_p=0.3,
+ )
+</code></pre>
+
+<pre><code class="language-python"># evaluate the model on a test set
+y_pred, y_test = test_model(model, test_data_loader)
+y_pred, y_test = [e.cpu() for e in y_pred], [e.cpu() for e in y_test]
+</code></pre>
+
+<p>Since the model is trained, we may evaluate it on a test set (feel free to apply any selected metric on <code>y_pred</code> and <code>y_test</code>). We will check the confusion matrix.</p>
+
+<figure>
+    <img src="/images/blog/twomodalbert/confusion_matrix_1.png"/> 
 </figure>
+
 
 <p>The model didn&rsquo;t learn to recognize any character except for Michael. How about we increase <code>context_size</code> to 50 and see how the confusion matrix changes?</p>
-<figure><img src="/images/blog/twomodalbert/confusion_matrix_2.png"/>
+
+<figure>
+    <img src="/images/blog/twomodalbert/confusion_matrix_2.png"/> 
 </figure>
 
+
 <p>We can observe that the model learned to recognize mainly Dwight, Michael and Jim. For less popular characters it doesn&rsquo;t work very well. However, comparing to the previous option there is a significant improvement.</p>
+
 <p>Finally, let&rsquo;s do an inference on the best model!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># run on new pair of texts</span>
-</span></span><span style="display:flex;"><span>line <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dwight is my best friend.&#34;</span>
-</span></span><span style="display:flex;"><span>context <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;What do you think about Dwight?&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>predict_on_text(model, line, context)
-</span></span></code></pre></div><p>The model predicts Stanley!</p>
+
+<pre><code class="language-python"># run on new pair of texts
+line = &quot;Dwight is my best friend.&quot;
+context = &quot;What do you think about Dwight?&quot;
+
+predict_on_text(model, line, context)
+</code></pre>
+
+<p>The model predicts Stanley!</p>
+
 <h2 id="summary">Summary</h2>
+
 <p>This article presented how the TwoModalBERT package works. It allows us to quickly check how different weighting modes of two input text fields influence the classification neural network performance. For the full Jupyter Notebook example please visit my <a href="https://github.com/zuzadeu/twomodalbert">GitHub</a>.</p>
 
           </article>
@@ -426,12 +475,15 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
               </h5>
               <div class="toc-content">
                 <nav id="TableOfContents">
-  <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#neural-network-architecture">Neural network architecture</a></li>
-    <li><a href="#twomodalbert-package">TwoModalBERT package</a></li>
-    <li><a href="#summary">Summary</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#neural-network-architecture">Neural network architecture</a></li>
+<li><a href="#twomodalbert-package">TwoModalBERT package</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+</ul>
 </nav>
               </div>
           </aside>
@@ -485,7 +537,7 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
       <div class="col-sm-12 col-md-12 col-lg-9 p-4">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -589,7 +641,7 @@ Predict The Office character with TwoModalBERT | Zuzanna Deutschman
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2022  All Rights Reserved
+            &copy; 2023  All Rights Reserved
 
         </div>
     </div>
