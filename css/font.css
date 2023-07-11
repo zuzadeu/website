@@ -11,10 +11,10 @@ body {
 
 /* primary font */
 .primary-font, #primary-font {
-    font-family: "Lora", sans-serif;
+    font-family: "Alata", sans-serif;
 }
 
 /* Default font */
 .default-font, #default-font {
-    font-family: "Lora", sans-serif;
+    font-family: "Roboto", sans-serif;
 }

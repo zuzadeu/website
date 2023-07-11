@@ -1,112 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Zuzanna Deutschman</title>
-    <link>https://zuzadeu.github.io/tags/</link>
+    <link>https://hugo-profile.netlify.app/tags/</link>
     <description>Recent content in Tags on Zuzanna Deutschman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Apr 2023 19:53:33 +0530</lastBuildDate>
-    
-	<atom:link href="https://zuzadeu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 03 Nov 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning</title>
+      <link>https://hugo-profile.netlify.app/tags/deep-learning/</link>
+      <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/tags/deep-learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://zuzadeu.github.io/tags/machine-learning/</link>
-      <pubDate>Wed, 19 Apr 2023 19:53:33 +0530</pubDate>
-      
-      <guid>https://zuzadeu.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML metrics</title>
-      <link>https://zuzadeu.github.io/tags/ml-metrics/</link>
-      <pubDate>Wed, 19 Apr 2023 19:53:33 +0530</pubDate>
-      
-      <guid>https://zuzadeu.github.io/tags/ml-metrics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recommender Systems</title>
-      <link>https://zuzadeu.github.io/tags/recommender-systems/</link>
-      <pubDate>Wed, 19 Apr 2023 19:53:33 +0530</pubDate>
-      
-      <guid>https://zuzadeu.github.io/tags/recommender-systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>https://zuzadeu.github.io/tags/deep-learning/</link>
+      <link>https://hugo-profile.netlify.app/tags/machine-learning/</link>
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/deep-learning/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Natural Language Processing</title>
-      <link>https://zuzadeu.github.io/tags/natural-language-processing/</link>
+      <link>https://hugo-profile.netlify.app/tags/natural-language-processing/</link>
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/natural-language-processing/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PyTorch</title>
-      <link>https://zuzadeu.github.io/tags/pytorch/</link>
+      <link>https://hugo-profile.netlify.app/tags/pytorch/</link>
       <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/pytorch/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/pytorch/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Docker</title>
-      <link>https://zuzadeu.github.io/tags/docker/</link>
-      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      <title>example</title>
+      <link>https://hugo-profile.netlify.app/tags/example/</link>
+      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/docker/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/example/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Flask</title>
-      <link>https://zuzadeu.github.io/tags/flask/</link>
-      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      <title>Markdown syntax</title>
+      <link>https://hugo-profile.netlify.app/tags/markdown-syntax/</link>
+      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/flask/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/markdown-syntax/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Sacred</title>
-      <link>https://zuzadeu.github.io/tags/sacred/</link>
-      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      <title>Sample</title>
+      <link>https://hugo-profile.netlify.app/tags/sample/</link>
+      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/sacred/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/sample/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Data Science</title>
-      <link>https://zuzadeu.github.io/tags/data-science/</link>
-      <pubDate>Fri, 22 May 2020 19:53:33 +0530</pubDate>
+      <title>Emoji support</title>
+      <link>https://hugo-profile.netlify.app/tags/emoji-support/</link>
+      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/data-science/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/emoji-support/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tensorflow</title>
-      <link>https://zuzadeu.github.io/tags/tensorflow/</link>
-      <pubDate>Wed, 15 Apr 2020 19:53:33 +0530</pubDate>
+      <title>Placeholder text</title>
+      <link>https://hugo-profile.netlify.app/tags/placeholder-text/</link>
+      <pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
       
-      <guid>https://zuzadeu.github.io/tags/tensorflow/</guid>
+      <guid>https://hugo-profile.netlify.app/tags/placeholder-text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rich content</title>
+      <link>https://hugo-profile.netlify.app/tags/rich-content/</link>
+      <pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/tags/rich-content/</guid>
       <description></description>
     </item>
     
