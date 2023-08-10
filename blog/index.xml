@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog posts on Zuzanna Deutschman</title>
+    <link>https://zuzadeu.github.io/blog/</link>
+    <description>Recent content in Blog posts on Zuzanna Deutschman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate>
+    
+	<atom:link href="https://zuzadeu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recommender Systems: Machine Learning Metrics and Business Metrics</title>
+      <link>https://zuzadeu.github.io/blog/recommendersystems/</link>
+      <pubDate>Wed, 19 Apr 2023 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/recommendersystems/</guid>
+      <description>This article was written for neptune.ai. It is about what metrics to select for recommender systems evaluation, so the Business strategies and Machine Learning models can work in harmony.</description>
+    </item>
+    
+    <item>
+      <title>Predict The Office character with TwoModalBERT</title>
+      <link>https://zuzadeu.github.io/blog/twomodalbert/</link>
+      <pubDate>Thu, 03 Nov 2022 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/twomodalbert/</guid>
+      <description>Introduction Have you ever dealt with a case when there were multiple text features in your dataset? For example, your task could be to properly classify a message given its context, understood as the previous message.
+Let&amp;rsquo;s consider whether we want to classify the below sample as positive or negative.
+   context message     This product is horrible, which I didn&amp;rsquo;t expect. Its website is just incredible!</description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analyzer with BERT (build, tune, deploy)</title>
+      <link>https://zuzadeu.github.io/blog/sentiment/</link>
+      <pubDate>Wed, 24 Jun 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/sentiment/</guid>
+      <description>This article was published in Towards Data Science. It is a blog post presenting how to develop a sentiment analyzer. It covers text preprocessing, model building, tuning, API, frontend creation, and containerization.</description>
+    </item>
+    
+    <item>
+      <title>Generate Nick Cave’s Lyrics in 2 mins</title>
+      <link>https://zuzadeu.github.io/blog/nickcave/</link>
+      <pubDate>Fri, 22 May 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/nickcave/</guid>
+      <description>This article was published in Towards Data Science. It is a blog post presenting a simple song lyrics generator using GPT-2 language model.</description>
+    </item>
+    
+    <item>
+      <title>Replicate your friend with Transformer</title>
+      <link>https://zuzadeu.github.io/blog/messenger/</link>
+      <pubDate>Wed, 15 Apr 2020 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/messenger/</guid>
+      <description>This article was written for Chatbot&amp;rsquo;s Life. It is a tutorial in which a chatbot based on a conversation from Messenger is created from scratch using TensorFlow.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Label Text Classification</title>
+      <link>https://zuzadeu.github.io/blog/multilabel/</link>
+      <pubDate>Tue, 03 Dec 2019 19:53:33 +0530</pubDate>
+      
+      <guid>https://zuzadeu.github.io/blog/multilabel/</guid>
+      <description>This article was published in Towards Data Science. It is a blog post presenting various methods of multi-label multiclass classification techniques.</description>
+    </item>
+    
+  </channel>
+</rss>
